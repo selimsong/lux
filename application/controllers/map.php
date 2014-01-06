@@ -85,11 +85,11 @@ class Map extends CI_Controller {
         		$ip = $_SERVER['REMOTE_ADDR'];
         	}
         	$geo  = file_get_contents('http://geoip.sinaapp.com/?secret=k1secret&IP='.$ip);
-        	$geoAr= json_decode($data);
+        	$geoAr= json_decode($geo);
         	$province = $geoAr->geos[0]->province_name;
         	//$_city = $geoAr->geos[0]->city_name;
         }
-      echo $province;
+ 
 //计算当前已经点燃的人数
         $ignitedCount = $this->Data_model->getDataSum('number','province');//点燃数量
         $ignitedCount = $ignitedCount['number'];
