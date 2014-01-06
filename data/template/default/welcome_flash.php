@@ -1,5 +1,6 @@
 <?php $this->load->view($config['site_template'].'/head');?>
 <body>
+<script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.min.js"></script>
 <div class="page" id="page_index">
     <?php $this->load->view($config['site_template'].'/nav');?>
     <div class="pagetxt">
@@ -28,8 +29,10 @@
             firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new2.swf", "788", "444");
           </script>
             <script language="javascript" type="text/javascript">
-                setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16000);
-            </script>
+            $(document).ready(function() {
+                setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16010);
+            });
+             </script>
         </div>
     </div>
 </div>
