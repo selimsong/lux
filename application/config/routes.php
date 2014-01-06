@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "home";
 $route['home/(.*)'] = "home/index/$1";
 $route['welcome/(.*)'] = "welcome/index/$1";
 $route['map/(.*)'] = "map/index/$1";
