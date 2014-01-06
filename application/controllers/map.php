@@ -88,7 +88,7 @@ class Map extends CI_Controller {
         	$geoAr= json_decode($geo);
         	$province = $geoAr->geos[0]->province_name;
         	$province = str_replace('省', '', $province);
-        	//$_city = $geoAr->geos[0]->city_name;
+        	$_city = $geoAr->geos[0]->city_name;
         }
  
 //计算当前已经点燃的人数
@@ -119,6 +119,9 @@ class Map extends CI_Controller {
             $provinceToCity[$provinceArray[$key]] = $value;
         }
         $userCity = $provinceToCity[$province];
+        if(!empty($_city) && $userCity != $_city){
+        	$userCity = NULL;
+        }
         $userCityPinyin = Pinyin($userCity,1);
         $userCityNumber = 0;
         foreach($cityArray as $key => $value){
