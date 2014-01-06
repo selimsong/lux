@@ -87,6 +87,7 @@ class Map extends CI_Controller {
         	$geo  = file_get_contents('http://geoip.sinaapp.com/?secret=k1secret&IP='.$ip);
         	$geoAr= json_decode($geo);
         	$province = $geoAr->geos[0]->province_name;
+        	$province = str_replace('省', '', $province);
         	//$_city = $geoAr->geos[0]->city_name;
         }
  
