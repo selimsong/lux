@@ -75,7 +75,20 @@ class Map extends CI_Controller {
 
             $province = $location[0];
         }
-
+        
+        if(empty($province)){
+        	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        		$ip = $_SERVER['HTTP_CLIENT_IP'];
+        	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        		$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        	} else {
+        		$ip = $_SERVER['REMOTE_ADDR'];
+        	}
+        	$geo  = file_get_contents('http://geoip.sinaapp.com/?secret=k1secret&IP='.$ip);
+        	$geoAr= json_decode($data);
+        	$province = $geoAr->geos[0]->province_name;
+        	//$_city = $geoAr->geos[0]->city_name;
+        }
 
 //计算当前已经点燃的人数
         $ignitedCount = $this->Data_model->getDataSum('number','province');//点燃数量
