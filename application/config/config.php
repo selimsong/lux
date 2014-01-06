@@ -15,7 +15,7 @@
 |
 */
 //$config['base_url']	= 'http://localhost/lishi/';
-$config['base_url']	= 'http://weiboapp.wood-spring.com/';
+$config['base_url']	= 'http://lux.yogurtdigital.com/';
 
 /*
 |--------------------------------------------------------------------------
