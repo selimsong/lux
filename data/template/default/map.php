@@ -1,4 +1,12 @@
 <?php $this->load->view($config['site_template'].'/head');?>
+<style type="text/css">
+.count{
+margin:-9px 0px 0px -10px;
+}
+.fCount{
+margin:-9px 0px 0px 0px;
+}
+</style>
 <body>
 <div class="page" id="page_welcome">
     <?php $this->load->view($config['site_template'].'/nav');?>
@@ -11,7 +19,13 @@
                         <li style="margin-top:-13px;">
                             <img src="<?= $config['site_templateurl']; ?>/images/yiyou11.png" alt="" />
                         </li>
-                        <li><?=$ignitedCount?></li>
+                        <li ><? //$ignitedCount?>
+                        <?php for ($i=0; $i<count($ignitedCount); $i++){
+                        	       $countCla = 'count';
+                                  if(0 == $i){
+                                  	 $countCla = 'fCount';
+                                  }
+                        ?><img class="<?php echo $countCla; ?>" src="<?= $config['site_templateurl']; ?>/images/count/<?php echo $ignitedCount[$i]; ?>.png" alt="" /><?php } ?></li>
                       <li style="margin-top:-13px;">
                             <img src="<?= $config['site_templateurl']; ?>/images/yiyou22.png" alt="" />
                         </li>

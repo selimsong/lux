@@ -151,11 +151,12 @@ class Map extends CI_Controller {
 		$config['seo_keywords'] = $config['site_keywords'];
 		$config['seo_description'] = $config['site_description'];
 		$this->load->setPath();
+		$_ignitedCount = str_split($ignitedCount);
 		$res = array(
             'config'=>$config,
             'currentLang'=>$this->Cache_model->currentLang,
             'langurl'=>$this->Cache_model->langurl,
-            'ignitedCount'=>$ignitedCount,
+            'ignitedCount'=>$_ignitedCount,
             'allIgnitedNumber'=>$allIgnitedNumber,
             'userCity'=>$userCity,
             'userCityPinyin'=>$userCityPinyin,
