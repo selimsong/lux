@@ -9,7 +9,7 @@
 <script src="http://malsup.github.io/jquery.cycle2.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.scrollVert.js"></script>
 <style>
-.cycle-slideshow { max-width: 300px; display: inline-block; margin: 0 }
+.cycle-slideshow {display: inline-block; margin: 0 }
 </style>
 <div class="page" id="page_welcome">
     <?php $this->load->view($config['site_template'].'/nav');?>
@@ -157,7 +157,11 @@
                     </a>
                   </div>
                 </div>
-                <ol id="index_ex_slide" class="flash cycle-slideshow ">
+                <ol id="index_ex_slide" class="flash cycle-slideshow "
+                    data-cycle-fx="scrollVert"
+	                data-cycle-reverse="true"
+                    data-cycle-pause-on-hover="true"
+                >
                   <li class="default">
                     <a>
                       <img src="<?= $config['site_templateurl']; ?>/images/night/1.jpg"/>
