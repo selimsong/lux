@@ -40,14 +40,32 @@
 	<div id="main_view" class="main_view">
 	<table cellSpacing=0 width="100%" class="content_view">
 	<tr>
-		<td>省份</td>
+		<td>user id</td>
         <td colspan="4">
-            <?= isset($view['province']) ? $view['province'] : ''; ?>
+            
         </td>
 	</tr>
 	<tr>
-		<td>分享量</td>
-		<td><input type="text" name="number" id="number"  class="input-text" value="<?=isset($view['number'])?$view['number']:0?>"></td>
+		<td>昵称</td>
+        <td colspan="4">
+           
+        </td>
+	</tr>
+	<tr>
+		<td>内容</td>
+        <td colspan="4">
+           
+        </td>
+	</tr>
+	<tr>
+		<td>省份</td>
+        <td colspan="4">
+           
+        </td>
+	</tr>
+	<tr>
+		<td>城市</td>
+		<td><input type="text" name="number" id="number"  class="input-text" value=""></td>
     </tr>
 	</table>
 	</div>
