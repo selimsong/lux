@@ -5,6 +5,12 @@
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/lux_night_banner1.js"></script>
 <!--<script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/easing.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/MogFocus.js"></script>-->
+<link rel=stylesheet href="http://www.malsup.com/jquery/cycle2/site.css">
+<script src="http://malsup.github.io/jquery.cycle2.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.scrollVert.js"></script>
+<style>
+.cycle-slideshow { max-width: 300px; display: inline-block; margin: 0 }
+</style>
 <div class="page" id="page_welcome">
     <?php $this->load->view($config['site_template'].'/nav');?>
     <div class="pagetxt">
@@ -151,7 +157,7 @@
                     </a>
                   </div>
                 </div>
-                <ol id="index_ex_slide" class="flash">
+                <ol id="index_ex_slide" class="flash cycle-slideshow ">
                   <li class="default">
                     <a>
                       <img src="<?= $config['site_templateurl']; ?>/images/night/1.jpg"/>
@@ -242,9 +248,14 @@
             </div>
           </div>
           <script type="text/javascript">
-            $.fullFoucs({
-                direction: 'up'
-            });
+           // $.fullFoucs({
+             //   direction: 'up'
+           // });
+           $('.cycle-slideshow').cycle({
+			    speed: 300,
+				slides: '>li'
+			
+			});
           </script>
             <div id="container" style="display:none;">
                 <div class="pics">
