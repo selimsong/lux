@@ -175,6 +175,7 @@ $lang['func_keywords'] = '网站关键词';
 $lang['func_tags'] = '聚合标签';
 $lang['func_model'] = '模型管理';
 $lang['func_article'] = '分享统计';
+$lang['func_share'] = '分享';
 $lang['func_product'] = '产品列表';
 $lang['func_down'] = '下载模型';
 $lang['func_hr'] = '招聘模型';
