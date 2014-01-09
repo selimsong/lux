@@ -323,7 +323,7 @@
           <div id="screen">
             <div class="content">
                 <div class="left">
-                    <wb:livestream skin="silver" appkey="3371428860" titlebar="n" border="n" topic="%E7%87%83%E6%83%85%E4%B9%8B%E5%A4%9C|%E7%87%83%E6%83%85%E4%B9%8B%E5%A4%9C" width="510" height="500"></wb:livestream>
+                    <iframe width="510" height="500"  frameborder="0" scrolling="no" src="http://widget.weibo.com/livestream/listlive.php?language=zh_cn&width=510&height=500&uid=3075822545&skin=1&refer=1&appkey=3371428860&pic=0&titlebar=0&border=0&publish=1&atalk=1&recomm=0&at=0&colordiy=0&atopic=%E7%87%83%E6%83%85%E4%B9%8B%E5%A4%9C&ptopic=%E7%87%83%E6%83%85%E4%B9%8B%E5%A4%9C&dpc=1"></iframe>
                 </div>
             </div>
           </div>
