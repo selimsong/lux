@@ -36,11 +36,6 @@ class Sina extends CI_Controller {
 		$returnData = file_get_contents('https://api.weibo.com/oauth2/access_token', false, $context);
         $tokenArr =  json_decode($returnData);
 		$token = $tokenArr->access_token;
-		echo $token;
-		var_dump($returnData);
-		var_dump($tokenArr);
-		var_dump($token);
-		exit();
 		if($token){
 			include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
 			set_cookie('oauth_token',$tokenStringStr['oauth_token'],3600*24);
