@@ -89,6 +89,7 @@ class Map extends CI_Controller {
         	$province = $geoAr->geos[0]->province_name;
         	$province = str_replace('省', '', $province);
         	$_city = $geoAr->geos[0]->city_name;
+        	$_city = str_replace('市', '', $_city);
         }
  
 //计算当前已经点燃的人数
