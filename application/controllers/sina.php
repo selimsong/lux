@@ -15,10 +15,6 @@ class Sina extends CI_Controller {
 		
 		include_once(APPPATH.'third_party/sina/config.php');
 		$code = $_GET['code'];
-		$url = 'https://api.weibo.com/oauth2/access_token?client_id='.WB_AKEY.'&client_secret='.WB_SKEY.'&grant_type=authorization_code&redirect_uri='.'http://lux.yogurtdigital.com/index.php?/home'.'&code='.$code;
-		//$content =file_get_contents($url);
-		
-		
 		$postdata = http_build_query(
 				array(
 						'client_id' => WB_AKEY,
@@ -28,7 +24,6 @@ class Sina extends CI_Controller {
 						'code' => $code,
 				)
 		);
-		
 		$opts = array('http' =>
 				array(
 						'method'  => 'POST',
@@ -38,18 +33,23 @@ class Sina extends CI_Controller {
 		);
 		
 		$context  = stream_context_create($opts);
-		
-		$myresult = file_get_contents('https://api.weibo.com/oauth2/access_token', false, $context);
-		
-		
-		
-		
-		var_dump($postdata);
-		echo "<br >";
-		
-		echo $code;
-		echo "<br >";
-		var_dump($myresult);
+		$returnData = file_get_contents('https://api.weibo.com/oauth2/access_token', false, $context);
+        $tokenArr =  json_decode($returnData);
+		$token = $tokenArr->access_token;
+		echo $token;
+		exit();
+		if($token){
+			include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
+			set_cookie('oauth_token',$tokenStringStr['oauth_token'],3600*24);
+			$c = new SaeTClientV2( WB_AKEY , WB_SKEY , $tokenStringStr['oauth_token']);
+			$uid_get = $c->get_uid();
+			$_user = $this->Data_model->getSingle(array('user_id'=>$uid_get['uid']),'share_record');
+			if (!empty($_user)) {
+				redirect(base_url('index.php?/map'));
+				exit();
+			}
+			redirect(base_url('index.php?/welcome'));
+		}
 
 	}
 	
