@@ -38,8 +38,8 @@ class Sina extends CI_Controller {
 		$token = $tokenArr->access_token;
 		if($token){
 			include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
-			set_cookie('oauth_token',$tokenStringStr['oauth_token'],3600*24);
-			$c = new SaeTClientV2( WB_AKEY , WB_SKEY , $tokenStringStr['oauth_token']);
+			set_cookie('oauth_token', $token,3600*24);
+			$c = new SaeTClientV2( WB_AKEY , WB_SKEY , $token);
 			$uid_get = $c->get_uid();
 			$_user = $this->Data_model->getSingle(array('user_id'=>$uid_get['uid']),'share_record');
 			if (!empty($_user)) {
