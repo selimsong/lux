@@ -36,9 +36,6 @@ class Home extends CI_Controller {
             	exit();
             }
             redirect(base_url('index.php?/welcome'));
-        }else{
-        	
-           redirect('https://api.weibo.com/oauth2/authorize?client_id='.WB_AKEY.'&response_type=code&redirect_uri='.WB_CALLBACK_URL);
         }
         $config = $this->Cache_model->loadConfig();
 		$config['seo_title'] = '微博授权';

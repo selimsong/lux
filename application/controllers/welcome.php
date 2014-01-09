@@ -17,7 +17,11 @@ class Welcome extends CI_Controller {
             //获取当前用户的信息
             include_once(APPPATH.'third_party/sina/config.php');
             include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
-
+            $token = get_cookie('oauth_token');
+            if(empty($token)){	 
+            	redirect('https://api.weibo.com/oauth2/authorize?client_id='.WB_AKEY.'&response_type=code&redirect_uri='.WB_CALLBACK_URL);
+                exit();
+            }
             $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
             $uid_get = $c->get_uid();
             $uid = $uid_get['uid'];
