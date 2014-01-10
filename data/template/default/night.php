@@ -162,91 +162,15 @@
 	                data-cycle-reverse="true"
                     data-cycle-pause-on-hover="true"
                 >
+                <?php 
+                   for($i=17; $i>=1; $i--){
+                ?>
                   <li class="default">
                     <a>
-                      <img src="<?= $config['site_templateurl']; ?>/images/night/1.jpg"/>
+                      <img src="<?= $config['site_templateurl']; ?>/images/night/<?php echo $i; ?>.jpg"/>
                     </a>
                   </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/2.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/3.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/4.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/5.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/6.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/7.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/8.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/9.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/10.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/11.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/12.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/13.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/14.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/15.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/16.jpg"/>
-                        </a>
-                    </li>
-                    <li class="default">
-                        <a>
-                            <img src="<?= $config['site_templateurl']; ?>/images/night/17.jpg"/>
-                        </a>
-                    </li>
+                <?php } ?>
                 </ol>
               </div>
             </div>
