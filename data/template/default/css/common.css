@@ -35,7 +35,7 @@ html, body{ height:100%; overflow:hidden; }
 
 body{ overflow:auto }
 
-.page{ width:940px; height:704px; position:absolute; left:50%; top:40%; margin-left:-470px; margin-top:-285px;  }
+.page{ width:940px; height:704px; margin:0 auto; }
 
 /* 顶部样式
 ---------------------------------------*/
