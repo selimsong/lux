@@ -15,8 +15,8 @@
 |
 */
 //$config['base_url']	= 'http://localhost/lishi/';
-$config['base_url']	= 'http://lux.yogurtdigital.com/';
-
+//$config['base_url']	= 'http://lux.yogurtdigital.com/';
+$config['base_url']	= 'http://localhost/lux/';
 /*
 |--------------------------------------------------------------------------
 | Manage Folders
