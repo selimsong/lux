@@ -157,13 +157,17 @@
                     </a>
                   </div>
                 </div>
-                <ol id="index_ex_slide" class="flash cycle-slideshow "
+                <ol id="index_ex_slide" class="cycle-slideshow "
                     data-cycle-fx="scrollVert"
 	                data-cycle-reverse="true"
-                    data-cycle-pause-on-hover="true"
                 >
+                <li class="default">
+                    <a>
+                      <img src="<?= $config['site_templateurl']; ?>/images/night/1.jpg"/>
+                    </a>
+                  </li>
                 <?php 
-                   for($i=16; $i>=1; $i--){
+                   for($i=16; $i>1; $i--){
                 ?>
                   <li class="default">
                     <a>
@@ -171,11 +175,6 @@
                     </a>
                   </li>
                 <?php } ?>
-                  <li class="default">
-                    <a>
-                      <img src="<?= $config['site_templateurl']; ?>/images/night/17.jpg"/>
-                    </a>
-                  </li>
                 </ol>
               </div>
             </div>
