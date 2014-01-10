@@ -53,7 +53,8 @@ class Map extends CI_Controller {
                     }
                 }
 
-
+                 echo $uid_get['uid'];
+                 exit();
                 //插入数据库当次转播的信息
                 $data = array(
                     'user_id'=> $uid_get['uid'],
