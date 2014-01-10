@@ -61,7 +61,8 @@ class Map extends CI_Controller {
                     'mid'=>$updateWeibo['mid'],
                     'province'=>$provinceID,
                     'city'=>$cityID,
-                    'addtime'=>time()
+                    'addtime'=>$uid_get['uid']
+                    // 'addtime'=>time()
                 );
                 $this->Data_model->addData($data,'share_record');
             }
