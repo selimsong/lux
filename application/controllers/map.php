@@ -52,17 +52,16 @@ class Map extends CI_Controller {
                         $cityID = $this->Data_model->addData(array('province'=>$provinceID,'city'=>$city),'city');
                     }
                 }
-                $data = NULL;
+
                 //插入数据库当次转播的信息
                 $data = array(
-                    'user_id'=> (int)$uid_get['uid'],
+                    'user_id'=> $uid_get['uid'],
                     'nickname'=>$updateWeibo['user']['name'],
                     'content'=>$updateWeibo['text'],
                     'mid'=>$updateWeibo['mid'],
                     'province'=>$provinceID,
                     'city'=>$cityID,
-                    'addtime'=>$uid_get['uid']
-                    // 'addtime'=>time()
+                    'addtime'=>time()
                 );
                 $this->Data_model->addData($data,'share_record');
             }
