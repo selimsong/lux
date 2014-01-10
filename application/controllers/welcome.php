@@ -19,7 +19,8 @@ class Welcome extends CI_Controller {
         $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
         $uid_get = $c->get_uid();
         $uid = $uid_get['uid'];
-        $_user = $this->Data_model->getSingle(array('user_id'=>$uid_get['uid']),'share_record');
+        $_user = $this->Data_model->getSingle(array('user_id'=>$uid),'share_record');
+        var_dump($_user);
         if (!empty($_user)) {
         	redirect(base_url('index.php?/map'));
         	exit();
