@@ -21,6 +21,7 @@ class Welcome extends CI_Controller {
         $uid = $uid_get['uid'];
         $_user = $this->Data_model->getSingle(array('user_id'=>$uid),'share_record');
         var_dump($_user);
+        var_dump(get_cookie('oauth_token'));
         if (!empty($_user)) {
         	redirect(base_url('index.php?/map'));
         	exit();
