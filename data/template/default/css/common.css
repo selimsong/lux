@@ -775,7 +775,7 @@ body{ overflow:auto }
 }
 
 .pagetxt_share_div2_1user{
-    height:66px;
+    height:40px;
     line-height:14px;
     width:124px;
     border-bottom:1px solid #efa2aa;
@@ -789,7 +789,6 @@ body{ overflow:auto }
     position:absolute;
     z-index:3;
     margin-top:-19px;
-    margin-left:8px;
 }
 .pagetxt_share_div2_1user2{
 	width:128px;
@@ -803,7 +802,7 @@ body{ overflow:auto }
     color:#302f2f;
     width:124px;
     display: block;
-    padding: 0px 0px 0px 53px;
+    padding: 0px 0px 0px 44px;
 }
 
 .pagetxt_share_div2_1txt{

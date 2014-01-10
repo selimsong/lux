@@ -459,7 +459,7 @@
                     </a>
                   </div>
                   <div class="pagetxt_share_div2_1user2">
-                    <a><?= $item['nickname']?></a>
+                    <a><?php echo  mb_substr($item['nickname'],0 ,7);?></a>
                   </div>
                 </div>
                 <div class="pagetxt_share_div2_1txt">
