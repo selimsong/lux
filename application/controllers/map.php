@@ -24,6 +24,7 @@ class Map extends CI_Controller {
                 $igniteCount = $this->Data_model->getDataNum(array(),'share_record');//点燃数量
             }
             $updateWeibo = $c->update('#燃情行动#我已经成功点燃SPRAK燃情火花，你也来一起加入燃情行动，获得亲密的两性关系吧。');
+            $uid_get = $c->get_uid();
             $location = $updateWeibo['user']['location'];
             $location = explode(' ', $location);
 
@@ -55,7 +56,7 @@ class Map extends CI_Controller {
 
                 //插入数据库当次转播的信息
                 $data = array(
-                    'user_id'=> $c->get_uid(),
+                    'user_id'=> $uid_get['uid'],
                     'nickname'=>$updateWeibo['user']['name'],
                     'content'=>$updateWeibo['text'],
                     'mid'=>$updateWeibo['mid'],
