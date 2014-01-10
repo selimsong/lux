@@ -47,6 +47,8 @@ class Sina extends CI_Controller {
 				exit();
 			}
 			redirect(base_url('index.php?/welcome'));
+		}else{
+			echo '<p>授权失败或者微博服务器出错（如果你是新浪审核人员，你的账号是否要添加为测试账号？），<a href="http://weibo.com/p/1006062027335320/app416184956">返回应用</a></p>';
 		}
 
 	}
