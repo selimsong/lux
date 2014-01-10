@@ -453,15 +453,13 @@
                   </a>
                 </div>
                 <div class="pagetxt_share_div2_1user">
-                  <div class="pagetxt_share_div2_1user1">
-                    <a>
+                  <div class="pagetxt_share_div2_1user1" style="text-align:left;">
+                    <a >
                       <img src="<?php if($item['user_thumb']): ?><?= $item['user_thumb'];?><?php else:?><?= $config['site_templateurl']; ?>/images/default.png<?php endif;?>"/>
                     </a>
                   </div>
                   <div class="pagetxt_share_div2_1user2">
-                    <a>
-                      <?= $item['nickname']?>
-                    </a>
+                    <a><?= $item['nickname']?></a>
                   </div>
                 </div>
                 <div class="pagetxt_share_div2_1txt">

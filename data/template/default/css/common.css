@@ -791,15 +791,19 @@ body{ overflow:auto }
     margin-top:-19px;
     margin-left:8px;
 }
-.pagetxt_share_div2_1user2{padding-top:28px;}
+.pagetxt_share_div2_1user2{
+	width:128px;
+	text-align:left;
+
+}
 .pagetxt_share_div2_1user2 a{
-    margin-left:0px;
+ 
     font-size:13px;
     font-weight:bold;
     color:#302f2f;
     width:124px;
     display: block;
-    padding: 6px 0px;
+    padding: 0px 0px 0px 53px;
 }
 
 .pagetxt_share_div2_1txt{
