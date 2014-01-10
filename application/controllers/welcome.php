@@ -13,13 +13,18 @@ class Welcome extends CI_Controller {
 	
 	public function index(){
         $page = $this->uri->segment(2) ? $this->uri->segment(2) : 'flash';
+        //获取当前用户的信息
+        include_once(APPPATH.'third_party/sina/config.php');
+        include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
+        $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
+        $uid_get = $c->get_uid();
+        $uid = $uid_get['uid'];
+        $_user = $this->Data_model->getSingle(array('user_id'=>$uid_get['uid']),'share_record');
+        if (!empty($_user)) {
+        	redirect(base_url('index.php?/map'));
+        	exit();
+        }
         if($page == 'share'){
-            //获取当前用户的信息
-            include_once(APPPATH.'third_party/sina/config.php');
-            include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
-            $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
-            $uid_get = $c->get_uid();
-            $uid = $uid_get['uid'];
             $user_message = $c->show_user_by_id($uid);//根据ID获取用户等基本信息
 
             //计算当前已经点燃的人数
