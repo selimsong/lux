@@ -1,10 +1,12 @@
 <?php $this->load->view($config['site_template'].'/head');?>
 <style type="text/css">
 .count{
-margin:-9px 0px 0px -10px;
+margin:-9px 0px 0px -8px;
+z-index:2;
 }
 .fCount{
-margin:-9px 0px 0px 0px;
+margin:-9px -5px 0px 0px;
+z-index:2;
 }
 </style>
 <body>
@@ -16,7 +18,7 @@ margin:-9px 0px 0px 0px;
                 <!--  已有XXXX位点燃LUX燃情火花 -->
                 <div class="pagetxt_map_title">
                     <ul>
-                        <li style="margin-top:-13px;">
+                        <li style="margin:-13px -8px 0px 0px;">
                             <img src="<?= $config['site_templateurl']; ?>/images/yiyou11.png" alt="" />
                         </li>
                         <li ><? //$ignitedCount?>
@@ -26,7 +28,7 @@ margin:-9px 0px 0px 0px;
                                   	 $countCla = 'fCount';
                                   }
                         ?><img class="<?php echo $countCla; ?>" src="<?= $config['site_templateurl']; ?>/images/count/<?php echo $ignitedCount[$i]; ?>.png" alt="" /><?php } ?></li>
-                      <li style="margin-top:-13px;">
+                      <li style="margin:-13px 0px 0px -8px;">
                             <img src="<?= $config['site_templateurl']; ?>/images/yiyou22.png" alt="" />
                         </li>
                     </ul>
