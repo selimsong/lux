@@ -55,7 +55,7 @@ class Map extends CI_Controller {
                 $data = NULL;
                 //插入数据库当次转播的信息
                 $data = array(
-                    'user_id'=> $uid_get['uid'],
+                    'user_id'=> (int)$uid_get['uid'],
                     'nickname'=>$updateWeibo['user']['name'],
                     'content'=>$updateWeibo['text'],
                     'mid'=>$updateWeibo['mid'],
