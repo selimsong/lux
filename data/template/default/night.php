@@ -163,7 +163,7 @@
                     data-cycle-pause-on-hover="true"
                 >
                 <?php 
-                   for($i=17; $i>=1; $i--){
+                   for($i=16; $i>=1; $i--){
                 ?>
                   <li class="default">
                     <a>
@@ -171,6 +171,11 @@
                     </a>
                   </li>
                 <?php } ?>
+                  <li class="default">
+                    <a>
+                      <img src="<?= $config['site_templateurl']; ?>/images/night/17.jpg"/>
+                    </a>
+                  </li>
                 </ol>
               </div>
             </div>
