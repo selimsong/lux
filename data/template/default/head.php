@@ -6,7 +6,7 @@
 <title><?=$config['seo_title']?> - <?=$config['site_name']?> </title>
 <meta name="keywords" content="<?=$config['seo_keywords']?>" />
 <meta name="description" content="<?=$config['seo_description']?>" />
-<link rel="stylesheet" type="text/css" href="<?=$config['site_templateurl'];?>/css/common.css?v=1.0" />
+<link rel="stylesheet" type="text/css" href="<?=$config['site_templateurl'];?>/css/common.css?v=1.01" />
 <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
