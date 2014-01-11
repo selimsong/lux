@@ -8,7 +8,7 @@
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.uploadify.min.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/NcXe.js"></script>
 <link rel="stylesheet" type="text/css" href="<?=$config['site_templateurl'];?>/css/uploadify.css">
-<style type="text/css">#SWFUpload_0{  width:274px; height:274px; }#SWFUpload_1{ margin-left:-56px; width:112px; height:100px; }</style>
+<style type="text/css">#SWFUpload_0{  width:274px; height:274px; }#SWFUpload_1{  width:274px; height:274px; }</style>
 <div class="page" id="page_welcome">
     <?php $this->load->view($config['site_template'].'/nav');?>
     <div class="pagetxt">
