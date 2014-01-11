@@ -25,12 +25,10 @@
             document.write(str);
             }
           </script>
-          <script type="text/javascript" language="javascript">
-            firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new2.swf", "788", "444");
-          </script>
             <script language="javascript" type="text/javascript">
             $(document).ready(function() {
-                setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16010);
+            	firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new2.swf", "788", "444");
+                setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16020);
             });
              </script>
         </div>
