@@ -1,4 +1,4 @@
-<?php $this->load->view($config['site_template'].'/head');?>
+<?php $this->load->view($config['site_template'].'/head'); ?>
 <body>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.min.js"></script>
 <div class="page" id="page_index">
@@ -25,10 +25,10 @@
             document.write(str);
             }
           </script>
-            <script language="javascript" type="text/javascript">
+          <script language="javascript" type="text/javascript">
+            firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new2.swf", "788", "444");
             $(document).ready(function() {
-            	firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new2.swf", "788", "444");
-                setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16020);
+                 setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16040);
             });
              </script>
         </div>
