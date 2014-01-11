@@ -1,13 +1,14 @@
 <?php $this->load->view($config['site_template'].'/head');?>
 <body>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.min.js"></script>
+<script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.popupoverlay.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/screen.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jsScroll.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.uploadify.min.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/NcXe.js"></script>
 <link rel="stylesheet" type="text/css" href="<?=$config['site_templateurl'];?>/css/uploadify.css">
-<style type="text/css">#SWFUpload_0{ margin-left:-56px; width:112px; height:100px; }#SWFUpload_1{ margin-left:-56px; width:112px; height:100px; }</style>
+<style type="text/css">#SWFUpload_0{  width:274px; height:274px; }#SWFUpload_1{ margin-left:-56px; width:112px; height:100px; }</style>
 <div class="page" id="page_welcome">
     <?php $this->load->view($config['site_template'].'/nav');?>
     <div class="pagetxt">
@@ -26,15 +27,15 @@
                 var swf = '<?=$config['site_templateurl'];?>/images/uploadify.swf';
                 var uploader = '<?=base_url('index.php?/share/uploadImg/')?>';
                 $(function () {
-                    changeUpload('<?=$config['site_templateurl'];?>/images/upload_photo.png', 1);
+                    changeUpload('<?=$config['site_templateurl'];?>/images/share/share_s.png', 1);
                 });
             </script>
           
-                <div style="margin:0px 0px 0px 55px;">
-                    <input id="file_upload" name="file_upload" type="file" multiple="true">
+                <div style="margin:0px 0px 14px 55px;">
+                    <div id="file_upload-button" class="uploadify-button share_popup_open" style="cursor: pointer;background-image: url(http://localhost/lux/data/template/default/images/upload_photo.png); text-indent: -9999px; height: 100px; line-height: 100px; width: 112px;">
+                    </div>
                 </div>
-            <form action="<?= base_url('index.php?/share/shareImg') ?>" method="post" id="shareForm" enctype="multipart/form-data" onsubmit="return checkSubmit()">
-                <input type="hidden" name="fileurl" id="fileurl"/>
+        
 <!--                上传图片end-->
               
                 <div class="share_text_bt" style="text-align:left;">
@@ -47,7 +48,7 @@
                     </div>
                   <div style="clear:both;height:1px;width:100%;"></div>
                 </div>
-            </form>
+         
         </div>
       <script type="text/javascript">
         function dianji() {
@@ -477,6 +478,22 @@
     </div>
     </div>
 </div>
+<div id="share_popup" class="share_popup">
+    <div class="share_popup_close"><input type="image" src="http://localhost/lux/data/template/default/images/close_bt.png"></div>
+    <div class="share_content">
+      <div class="share_photo"><input type="file" multiple="true" name="file_upload" id="file_upload"></div>
+      <div class="share_right_content" style="text-align:left;">
+         <form action="<?= base_url('index.php?/share/shareImg') ?>" method="post" id="shareForm" enctype="multipart/form-data" onsubmit="return checkSubmit()">
+                <input type="hidden" name="fileurl" id="fileurl"/>
+           <textarea name="content" onclick="dianji()" id="content" rows="6" cols="10" style="float:left;">#燃情之夜#</textarea>
+           <div class="share_textarea_zishu" id="share_textarea_zishu" style="display:block;">(字数不超过140个)</div>
+           <div class="pagetxt_share_div1_txtbt">
+               <input type="image" src="<?= $config['site_templateurl']; ?>/images/share/share_submit.png"/>
+           </div>
+              </form>
+           </div>
+    </div>
+</div>
 <script type="text/javascript">
   $(function() {
   var container = document.querySelector('#leftDiv');
@@ -498,6 +515,12 @@
   }
   }
 
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('#share_popup').popup();
+});
 </script>
 </body>
 </html>
