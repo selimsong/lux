@@ -1,5 +1,10 @@
 <?php $this->load->view($config['site_template'].'/head');?>
 <body>
+<style type="text/css">
+   .divScrollBar{height:200px;width:30px;background:#f199aa url(<?= $config['site_templateurl']; ?>/images/share_story_line.png) top center no-repeat;}
+   .divScrollBar:hover{height:200px;width:30px;background:#f199aa url(<?= $config['site_templateurl']; ?>/images/share_story_line.png) top center no-repeat;}
+   .divScrollBar share_mi12_div{width:30px;height:46px !important;background:url(<?= $config['site_templateurl']; ?>/images/long_scroll1.png) top center no-repeat; position:absolute; left:0px; top:0px;}
+</style>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.popupoverlay.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/screen.js"></script>
@@ -436,11 +441,7 @@
         </div>
     </div>
     <div class="clearfix"></div>
-      <style type="text/css">
-        .divScrollBar{height:200px;width:30px;background:#f199aa url(<?= $config['site_templateurl']; ?>/images/share_story_line.png) top center no-repeat;}
-        .divScrollBar:hover{height:200px;width:30px;background:#f199aa url(<?= $config['site_templateurl']; ?>/images/share_story_line.png) top center no-repeat;}
-        .divScrollBar share_mi12_div{width:30px;height:46px;background:url(<?= $config['site_templateurl']; ?>/images/long_scroll1.png) top center no-repeat; position:absolute; left:0px; top:0px;}
-    </style>
+
         <div class="pagetxt_share_div2" id="pagetxt_share_div2">
           <div id="share_mi12_div">
             <div class="left" id="leftDiv">
