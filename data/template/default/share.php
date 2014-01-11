@@ -30,14 +30,12 @@
                     changeUpload('<?=$config['site_templateurl'];?>/images/share/share_s.png', 1);
                 });
             </script>
-          
+            
+             <div class="share_popup_open"  style="cursor: pointer;">
                 <div style="margin:0px 0px 14px 55px;">
-                    <div id="file_upload-button" class="uploadify-button share_popup_open" style="cursor: pointer;background-image: url(http://localhost/lux/data/template/default/images/upload_photo.png); text-indent: -9999px; height: 100px; line-height: 100px; width: 112px;">
+                    <div id="file_upload-button" class="uploadify-button " style="cursor: pointer;background-image: url(http://localhost/lux/data/template/default/images/upload_photo.png); text-indent: -9999px; height: 100px; line-height: 100px; width: 112px;">
                     </div>
                 </div>
-        
-<!--                上传图片end-->
-              
                 <div class="share_text_bt" style="text-align:left;">
                     <div class="share_textarea" style="text-align:left;">
                         <textarea name="content" onclick="dianji()" id="content" rows="6" cols="10" style="float:left;">#燃情之夜#</textarea>
@@ -48,7 +46,7 @@
                     </div>
                   <div style="clear:both;height:1px;width:100%;"></div>
                 </div>
-         
+           </div>
         </div>
       <script type="text/javascript">
         function dianji() {
