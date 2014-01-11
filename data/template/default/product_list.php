@@ -18,7 +18,7 @@
                                 <img src="<?= $value['thumb']; ?>"/>
 
                                 <div class="products_order_bt">
-                                    <a href="<?= $value['linkurl'] ?>" target="_blank">
+                                    <a href="<?= $value['linkurl'] ?>" onclick="ga('send', 'event', 'link', 'click', '产品介绍');" target="_blank">
                                         <img src="<?= $config['site_templateurl']; ?>/images/buy_bt.png"/>
                                     </a>
                                 </div>
