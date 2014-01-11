@@ -51,8 +51,8 @@ class Share extends CI_Controller {
                 $image_config['new_image'] = $new_thumb_url;
 //                $image_config['create_thumb'] = TRUE;
                 $image_config['maintain_ratio'] = TRUE;
-                $image_config['width'] = 112;
-                $image_config['height'] = 100;
+                $image_config['width'] = 274;
+                $image_config['height'] = 274;
 
                 $this->load->library('image_lib', $image_config);
 
