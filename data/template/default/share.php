@@ -38,7 +38,7 @@
             
              <div class="share_popup_open"  style="cursor: pointer;">
                 <div style="margin:0px 0px 14px 55px;">
-                    <div id="file_upload-button" class="uploadify-button " style="cursor: pointer;background-image: url(http://localhost/lux/data/template/default/images/upload_photo.png); text-indent: -9999px; height: 100px; line-height: 100px; width: 112px;">
+                    <div id="file_upload-button" class="uploadify-button " style="cursor: pointer;background-image: url(http://lux.yogurtdigital.com/lux/data/template/default/images/upload_photo.png); text-indent: -9999px; height: 100px; line-height: 100px; width: 112px;">
                     </div>
                 </div>
                 <div class="share_text_bt" style="text-align:left;">
@@ -478,7 +478,7 @@
     </div>
 </div>
 <div id="share_popup" class="share_popup">
-    <div class="share_popup_close"><input type="image" src="http://localhost/lux/data/template/default/images/close_bt.png"></div>
+    <div class="share_popup_close"><input type="image" src="http://lux.yogurtdigital.com/data/template/default/images/close_bt.png"></div>
     <div class="share_content">
       <div class="share_photo"><input type="file" multiple="true" name="file_upload" id="file_upload"></div>
       <div class="share_right_content" style="text-align:left;">
