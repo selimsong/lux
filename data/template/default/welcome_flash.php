@@ -28,9 +28,14 @@
           <script language="javascript" type="text/javascript">
             firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new2.swf", "788", "444");
             $(document).ready(function() {
-                 setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16340);
+                 //setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16340);
             });
              </script>
+        </div>
+        <div style="float: right;margin:60px 0px 0px 0xp;">
+             <a href="<?=base_url('index.php?/welcome/view')?>">
+               <img src="<?= $config['site_templateurl']; ?>/images/skip-flash.png"/>
+             </a>
         </div>
     </div>
 </div>
