@@ -32,12 +32,13 @@
             });
              </script>
         </div>
-        <div style="float: right;margin:60px 0px 0px 0xp;">
+    </div>
+            <div style="float: right;margin:60px 0px 0px 0xp;">
              <a href="<?=base_url('index.php?/welcome/view')?>">
                <img src="<?= $config['site_templateurl']; ?>/images/skip-flash.png"/>
              </a>
         </div>
-    </div>
 </div>
+
 </body>
 </html>
