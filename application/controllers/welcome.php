@@ -18,7 +18,7 @@ class Welcome extends CI_Controller {
         include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
         $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
         $uid_get = $c->get_uid();
-        $uid = $uid_get['uid'];
+        //$uid = $uid_get['uid'];
         $_user = $this->Data_model->getSingle(array('user_id'=>$uid),'share_record');
    
         if (!empty($_user)) {
