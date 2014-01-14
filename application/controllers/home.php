@@ -5,9 +5,9 @@ class Home extends CI_Controller {
 		parent::__construct();
 		$this->Cache_model->setLang($this->input->get());
 		$this->Lang_model->loadLang('front',$this->Cache_model->currentLang);
-		if($this->uri->segment(3)){
-			show_404();
-		}
+		//if($this->uri->segment(3)){
+			//show_404();
+		//}
 		$this->load->helper('tags');
 	}
 	
@@ -29,7 +29,8 @@ class Home extends CI_Controller {
         	include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
             set_cookie('oauth_token',$tokenStringStr['oauth_token'],3600*24);
             $c = new SaeTClientV2( WB_AKEY , WB_SKEY , $tokenStringStr['oauth_token']);
-            $uid_get = $c->get_uid();
+            //$uid_get = $c->get_uid();
+            $uid_get = $_GET['viewer'];
             $_user = $this->Data_model->getSingle(array('user_id'=>$uid_get['uid']),'share_record');      
             if (!empty($_user)) {
             	redirect(base_url('index.php?/map'));
