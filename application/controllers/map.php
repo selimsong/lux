@@ -55,7 +55,7 @@ class Map extends CI_Controller {
 
                 //插入数据库当次转播的信息
                 $data = array(
-                    'user_id'=> $_GET['viewer'],
+                    'user_id'=> $uid_get['uid'],
                     'nickname'=>$updateWeibo['user']['name'],
                     'content'=>$updateWeibo['text'],
                     'mid'=>$updateWeibo['mid'],
@@ -68,8 +68,7 @@ class Map extends CI_Controller {
         }
         else {
             $uid_get = $c->get_uid();
-            //$uid = $uid_get['uid'];
-            $uid_get = $_GET['viewer'];
+            $uid = $uid_get['uid'];
             $user_message = $c->show_user_by_id($uid);//根据ID获取用户等基本信息
             $location = $user_message['location'];
             $location = explode(' ', $location);
