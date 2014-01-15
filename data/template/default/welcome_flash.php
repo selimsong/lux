@@ -26,9 +26,9 @@
             }
           </script>
           <script language="javascript" type="text/javascript">
-            firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new2.swf", "788", "444");
+            firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new3.swf", "788", "444");
             $(document).ready(function() {
-                 setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 16340);
+                 setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 15330);
             });
              </script>
         </div>
