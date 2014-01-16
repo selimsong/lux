@@ -1,7 +1,7 @@
 <?php $this->load->view($config['site_template'].'/head'); ?>
 <body>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/jquery.min.js"></script>
-<div class="page" id="page_index">
+<div class="page" style="height:740px;" id="page_index">
     <?php $this->load->view($config['site_template'].'/nav');?>
     <div class="pagetxt">
         <div class="pagetxt_index">
@@ -28,14 +28,14 @@
           <script language="javascript" type="text/javascript">
             firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new4.swf", "940", "528");
             $(document).ready(function() {
-                 setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 15330);
+                 //setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 15330);
             });
              </script>
         </div>
     </div>
-            <div style="float: right;margin:50px 0px 0px 0xp;">
-             <a href="<?=base_url('index.php?/welcome/view')?>">
-               <img src="<?= $config['site_templateurl']; ?>/images/skip-flash.png"/>
+            <div style="float: right;margin:0px 0px 0px 0px;">
+             <a href="<?=base_url('index.php?/welcome/view')?>" >
+               <img  src="<?= $config['site_templateurl']; ?>/images/skip-flash.png"/>
              </a>
         </div>
 </div>
