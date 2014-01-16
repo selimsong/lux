@@ -26,14 +26,14 @@
             }
           </script>
           <script language="javascript" type="text/javascript">
-            firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new3.swf", "788", "444");
+            firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new4.swf", "940", "528");
             $(document).ready(function() {
-                 setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 15330);
+                // setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 15330);
             });
              </script>
         </div>
     </div>
-            <div style="float: right;margin:60px 0px 0px 0xp;">
+            <div style="float: right;margin:50px 0px 0px 0xp;">
              <a href="<?=base_url('index.php?/welcome/view')?>">
                <img src="<?= $config['site_templateurl']; ?>/images/skip-flash.png"/>
              </a>
