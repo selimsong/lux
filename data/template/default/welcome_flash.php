@@ -26,7 +26,7 @@
             }
           </script>
           <script language="javascript" type="text/javascript">
-            firm_flash_play("<?= $config['site_templateurl']; ?>/images/video-new4.swf", "940", "528");
+            firm_flash_play("http://luxchina.qiniudn.com/video-new4.swf", "940", "528");
             $(document).ready(function() {
                  setTimeout("javascript:location.href='<?=base_url('index.php?/welcome/view')?>'", 15330);
             });
