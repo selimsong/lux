@@ -5,10 +5,16 @@
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/lux_night_banner1.js"></script>
 <!--<script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/easing.js"></script>
 <script type="text/javascript" src="<?=$config['site_templateurl'];?>/js/MogFocus.js"></script>-->
-<link rel=stylesheet href="http://www.malsup.com/jquery/cycle2/site.css">
 <script src="http://malsup.github.io/jquery.cycle2.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.scrollVert.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+<script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>     
 <style>
+.slideshow { margin: auto; width: 400px;}
+.slideshow img { width: 135px; height: 82px;  }
+div.responsive img { width: auto; height: auto }
+.cycle-pager { position: static; margin-top: 5px }
+div.vertical { width: 100px }
 .cycle-slideshow {display: inline-block; margin: 0 }
 </style>
 <div class="page" id="page_welcome">
@@ -35,9 +41,10 @@
         #flash_control{position:absolute;z-index:900;width:51px;}
         .flash li{position:absolute;overflow:hidden;z-index:601;left:0;}
         .flash .default{z-index:605;}
-        .frame_keleyi_com{width:432px;height:325px;overflow:hidden;background:url(<?= $config['site_templateurl']; ?>/images/ye_right_bg.png);background-size:100%;}
-        .scroll_keleyi_com{width:432px;height:325px;position:relative;}
-        .flash img{width:432px;height:325px;}
+        .frame_keleyi_com{width:510px;height:380px;overflow:hidden; margin:20px 0px 0px 7px;
+        }
+        .scroll_keleyi_com{width:510px;height:380px;position:relative;}
+        .flash img{width:510px;height:380px;}
       </style>
         <!-- 图片区 -->
         <script type="text/javascript">
@@ -45,6 +52,7 @@
                 //  大图片路径
                 {"image": "<?= $config['site_templateurl']; ?>/images/night/1.jpg" }
             ];
+            /**
             jQuery(function () {
                 if (!$('#slidePic')[0])
                     return;
@@ -125,6 +133,7 @@
                     $('#dailyImage').attr('src', ad.image);
                 }
             });
+            */
         </script>
       <script language="javascript" type="text/javascript">
           function pic_bt() {
@@ -163,7 +172,7 @@
                 >
                 <li class="default">
                     <a>
-                      <img src="<?= $config['site_templateurl']; ?>/images/night/1.jpg"/>
+                      <img src="<?= $config['site_templateurl']; ?>/images/night/1.png"/>
                     </a>
                   </li>
                 <?php 
@@ -171,19 +180,55 @@
                 ?>
                   <li class="default">
                     <a>
-                      <img src="<?= $config['site_templateurl']; ?>/images/night/<?php echo $i; ?>.jpg"/>
+                      <img src="<?= $config['site_templateurl']; ?>/images/night/<?php echo $i; ?>.png"/>
                     </a>
                   </li>
                 <?php } ?>
                 </ol>
               </div>
             </div>
+      <div class="slide-pic">      
+
+						
+		    <!-- 向上按钮 -->
+               <div   style="width:30px;margin:50px 0px 0px 0px;height:37px;float:left;"><a class="gray" id="prev" hidefocus href="javascript:;"></a></div>
+                      <!-- 向下按钮 -->
+              <div  style="width:30px;height:37px;margin-top:50px;float:right"><a id="next" hidefocus href="javascript:;"></a></div>
+		<ul id="pic-container-ul" class="slideshow" style="width:400px;"
+		    data-cycle-fx=carousel
+		    data-cycle-timeout=0
+		    data-cycle-carousel-visible=3
+		    data-cycle-next="#next"
+		    data-cycle-prev="#prev"
+		    data-cycle-pager="#pager"
+		    >
+		    <li><img title="1" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+		    <li><img title="2" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+            <li><img title="3" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+            <li><img title="4" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+            <li><img title="5" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+            <li><img title="6" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+            <li><img title="7" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+            <li><img title="8" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+            <li><img title="9" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+		</ul>		
+           
+            </div>
+            
+            
           </div>
           <script type="text/javascript">
            // $.fullFoucs({
              //   direction: 'up'
            // });
            $('.cycle-slideshow').cycle({
+			    speed: 300,
+				slides: '>li'
+			
+			});
+
+
+           $('.slideshow').cycle({
 			    speed: 300,
 				slides: '>li'
 			
@@ -197,70 +242,23 @@
             </div>
             
             <div class="right">
-                <div style="height:40px;text-align:center;padding-top:30px;">
+                <div style="height:30px;text-align:center;padding:8px 0px 8px 0px; margin:0px 30px 0px 0px;">
                     <a href="<?=base_url('index.php?/share')?>">
-                        <img src="<?= $config['site_templateurl']; ?>/images/mwant_bt.png" alt=""/>
+                        <img src="<?= $config['site_templateurl']; ?>/images/new_night/i-join.png" alt=""/>
                     </a>
                 </div>
-                <div class="slide-pic" id="slidePic">
-                    <!-- 向上按钮 -->
-                    <div style="width:85px;text-align:center;height:6px;margin-top:20px;"><a class="gray" id="prev" hidefocus href="javascript:;"></a></div>
-                    <!-- 右边小图 -->
-                    <div class="pic-container">
-                        <ul id="pic-container-ul">
-                            <li class="cur" onclick="pic_bt()"  style="background:url(<?= $config['site_templateurl']; ?>/images/ye_right_list_bg.png) top right no-repeat;">
-                                <!-- 鼠标移动到小图片，小图片前显示下列图标 -->
-                                <div class="ye_li_hover"></div>
-                            </li>
-                            <li class="cur" onclick="pic_bt()" style="background:url(<?= $config['site_templateurl']; ?>/images/ye_right_list_bg.png) top right no-repeat;">
-                              <!-- 鼠标移动到小图片，小图片前显示下列图标 -->
-                              <div class="ye_li_hover"></div>
-                            </li>
-                            <li class="cur" onclick="pic_bt()" style="background:url(<?= $config['site_templateurl']; ?>/images/ye_right_list_bg.png) top right no-repeat;">
-                              <!-- 鼠标移动到小图片，小图片前显示下列图标 -->
-                              <div class="ye_li_hover"></div>
-                            </li>
-                            <li class="cur" onclick="pic_bt()" style="background:url(<?= $config['site_templateurl']; ?>/images/ye_right_list_bg.png) top right no-repeat;">
-                              <!-- 鼠标移动到小图片，小图片前显示下列图标 -->
-                              <div class="ye_li_hover"></div>
-                            </li>
-                            <li class="cur" onclick="pic_bt()" style="background:url(<?= $config['site_templateurl']; ?>/images/ye_right_list_bg.png) top right no-repeat;">
-                              <!-- 鼠标移动到小图片，小图片前显示下列图标 -->
-                              <div class="ye_li_hover"></div>
-                            </li>
-                            <li class="cur" onclick="pic_bt()" style="background:url(<?= $config['site_templateurl']; ?>/images/ye_right_list_bg.png) top right no-repeat;">
-                              <!-- 鼠标移动到小图片，小图片前显示下列图标 -->
-                              <div class="ye_li_hover"></div>
-                            </li>
-                          <li class="cur" onclick="pic_bt()" style="background:url("<?= $config['site_templateurl']; ?>/images/ye_right_list_bg.png) top right no-repeat;">
-                            <!-- 鼠标移动到小图片，小图片前显示下列图标 -->
-                            <div class="ye_li_hover"></div>
-                          </li>
-                        </ul>
-                    </div>
-                    <!-- 向下按钮 -->
-                    <div style="width:85px;height:6px;"><a id="next" hidefocus href="javascript:;"></a></div>
+                <div class="ngitht_comment-head" ></div>
+                <div class="night-comments">
+                   
+                  <wb:comments url="http://open.weibo.com/widget/comments.php" fontsize="12" width="260" ></wb:comments>
+                
                 </div>
+                
             </div>
         </div>
     </div>
     <!-- 讨论区 -->
-    <div class="taolun_txt">
-      <div class="taolun_txt_right">
-        <div class="taolun_txt_right_pinglun">
-          <div id="screen">
-            <div class="content">
-                <div class="left">
-                    <iframe width="510" height="500"  frameborder="0" scrolling="no" src="http://widget.weibo.com/livestream/listlive.php?language=zh_cn&width=510&height=500&uid=3075822545&skin=1&refer=1&appkey=3371428860&pic=0&titlebar=0&border=0&publish=1&atalk=1&recomm=0&at=0&colordiy=0&atopic=%E7%87%83%E6%83%85%E4%B9%8B%E5%A4%9C&ptopic=%E7%87%83%E6%83%85%E4%B9%8B%E5%A4%9C&dpc=1"></iframe>
-                </div>
-            </div>
-          </div>
-       </div>
-     </div>
-    <div style="position:absolute;z-index:44;top:410px;left:630px;display:none;">
-        <img src="<?= $config['site_templateurl']; ?>/images/ye_huaduo.png" alt=""/>
-    </div>
-    </div>
+    
     </div>
     </div>
 </div>

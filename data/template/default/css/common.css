@@ -1031,9 +1031,22 @@ body{ overflow:auto }
 ------------------------------------------------*/
 #container{ float:left; width:432px; height:325px; margin:9px 0px 0px 9px; }
 
-.right{ width:90px; height:342px; float:right; background:url(../images/ye_right_bg.png); }
+.right{height:342px;  float:right; width:300px; margin:0px 7px 0px 0px; }
 
-.slide-pic{ width:90px; height:0px; }
+.night-comments{
+height:448px;
+margin: 0px 0px 0px 3px;
+overflow:hidden;
+}
+.ngitht_comment-head{
+	margin: 0px 10px 0px 0px;
+	height: 29px;
+    width: 265px;
+    overflow:hidden;
+	background:url("../images/new_night/comments-night.png") no-repeat scroll left center rgba(0, 0, 0, 0);	
+}
+
+.slide-pic{ height:0px; width:510px; margin:0px 0px 0px 6px; }
 
 .slide-pic A#prev:link, .slide-pic A#prev:visited{ display:block; background:url(../images/ye_left_top_bt.png) top center no-repeat; overflow:hidden; width:85px; text-align:center; height:6px; outline:none; }
 
@@ -1047,15 +1060,15 @@ body{ overflow:auto }
 
 .slide-pic A#next:active{ display:block; background:url(../images/ye_left_bottom_bt.png) top center no-repeat; overflow:hidden; width:85px; text-align:center; height:6px; outline:none; }
 
-.slide-pic A#prev:link, .slide-pic A#prev:visited{ background:url(../images/ye_left_top_bt.png) top center no-repeat; }
+.slide-pic A#prev:link, .slide-pic A#prev:visited{ background:url(../images/ye_left_top_bt-ho.png) top center no-repeat; width:30px; height:37px; }
 
-.slide-pic A#prev:hover{ background:url(../images/ye_left_top_bt.png) top center no-repeat; }
+.slide-pic A#prev:hover{ background:url(../images/ye_left_top_bt-ho.png) top center no-repeat; }
 
 .slide-pic A#prev:active{ background:url(../images/ye_left_top_bt.png) top center no-repeat; }
 
-.slide-pic A#next:link, .slide-pic A#next:visited{ background:url(../images/ye_left_bottom_bt.png) top center no-repeat; }
+.slide-pic A#next:link, .slide-pic A#next:visited{ background:url(../images/ye_right_top_bt-ho.png) top center no-repeat; width:30px; height:37px; }
 
-.slide-pic A#next:hover{ background:url(../images/ye_left_bottom_bt.png) top center no-repeat; }
+.slide-pic A#next:hover{ background:url(../images/ye_right_top_bt-ho.png) top center no-repeat; }
 
 .slide-pic A#next:acive{ background:url(../images/ye_left_bottom_bt.png) top center no-repeat; }
 
@@ -1068,11 +1081,11 @@ body{ overflow:auto }
 	outline:none;
 }
 #warpper2 {
-	width:432px;
+	width:490px;
 	height:325px;
 	position:absolute;
 	z-index:9999999px;
-	margin:8px;
+
 }
 #focus2{
 	width:432px;
@@ -1136,13 +1149,13 @@ body{ overflow:auto }
 .slide-pic A.gray#next:hover {background: url(images/ye_left_bottom_bt.png) top center no-repeat;}
 .slide-pic A.gray#next:active {background: url(images/ye_left_bottom_bt.png) top center no-repeat;}
 */
-.slide-pic .pic-container{ margin:4px auto; overflow:hidden;margin-left:-2px; width:90px; height:217px; overflow:hidden; }
+.slide-pic .pic-container{overflow:hidden;   height:90px; overflow:hidden;width:449px; }
 
-.slide-pic UL LI{ display:block; overflow:hidden; cursor:pointer; width:80px; height:47px; margin:0px auto; margin-top:6px;position:relative; }
+.slide-pic UL LI{ display:block; overflow:hidden; cursor:pointer; width:135px; height:82px; margin:2px 6px 0px 8px; padding:22px 0px 0px 0px;   float: left; }
 
-.slide-pic UL LI IMG{ width:72px; height:47px; display:block; }
+.slide-pic UL LI IMG{ display:block; }
 
-.pagetxt_participate{ width:540px; height:342px; margin-left:auto; margin-right:auto; background:url(../images/ye_bg.png) repeat-x; margin-top:60px; }
+.pagetxt_participate{ width:831px; padding:0px 0px 0px 0px; height:561px; margin-left:auto; margin-right:auto; background:url(../images/new_night/night-bg.png) no-repeat;  }
 
 .ye_container{ margin-left:auto; margin-right:auto; width:530; height:342px; }
 
@@ -1151,6 +1164,7 @@ body{ overflow:auto }
 .ye_bood_txt1, .pics img, .right, .ye_container, .right, .slide-pic .pic-container, .slide-pic ul li, .slide-pic ul li, .slide-pic ul, .slide-pic ul li IMG{ display:block; }
 .ye_li_hover{ width:72px; height:47px;position:absolute; z-index:33; top:8px;left:0px; }
 .ye_li_hover:hover{ width:72px; height:47px;background:url(../images/ye_li_hover_bg.png) no-repeat; position:absolute; z-index:33; top:8px;left:0px; }
+.cycle-slide-active{background:url(../images/ye_li_ver_hover_bg.png) center top no-repeat ;    }
 
 .cur_txt_n{ width:72px; height:47px; line-height:47px; text-align:center; color:#fff; }
 
