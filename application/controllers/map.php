@@ -29,7 +29,7 @@ class Map extends CI_Controller {
            
             $location = $updateWeibo['user']['location'];
             $location = explode(' ', $location);
-
+            log_message('error', 'uid---'.$uid.'  ----mid'.$updateWeibo['mid']);
             if($updateWeibo['mid']){
                 $province = $location[0];
                 if($province){
