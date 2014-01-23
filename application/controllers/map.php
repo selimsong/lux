@@ -16,9 +16,10 @@ class Map extends CI_Controller {
         include_once(APPPATH.'third_party/sina/config.php');
         include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
         $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
-
+        log_message('error', 'init---');
         if($page == 'submit'){
             //获取当前用户的信息
+        	log_message('error', 'submit map---');
             $igniteCount = get_cookie('igniteCount');
             if(!$igniteCount || !is_numeric($igniteCount)){
                 $igniteCount = $this->Data_model->getDataNum(array(),'share_record');//点燃数量
