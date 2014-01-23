@@ -19,12 +19,13 @@ class Home extends CI_Controller {
         $tokenStringAccess = base64_decode($tokenString[1]);
 
         $tokenStringStr = json_decode($tokenStringAccess,true);
+        $uid_get =$this->input->get('viewer');
+        $this->session->set_userdata(array('uid'=> $uid_get));
         if($tokenStringStr['oauth_token']){
         	include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
             set_cookie('oauth_token',$tokenStringStr['oauth_token'],3600*24);
             $c = new SaeTClientV2( WB_AKEY , WB_SKEY , $tokenStringStr['oauth_token']);
-            $uid_get =$this->input->get('viewer');
-            $this->session->set_userdata(array('uid'=> $uid_get));
+
             //$uid_get = $c->get_uid();
            
             $_user = $this->Data_model->getSingle(array('user_id'=>$uid_get),'share_record');      
