@@ -23,15 +23,13 @@ class Map extends CI_Controller {
             if(!$igniteCount || !is_numeric($igniteCount)){
                 $igniteCount = $this->Data_model->getDataNum(array(),'share_record');//点燃数量
             }
-            log_message('error', 'submit map  1---');
             $updateWeibo = $c->update('#燃情行动#我已经成功点燃SPRAK燃情火花，你也来一起加入燃情行动，获得亲密的两性关系吧。');
             //$uid_get = $c->get_uid();
             $uid = $this->session->userdata('uid');
-            log_message('error', 'submit map--2-');
             $location = $updateWeibo['user']['location'];
             $location = explode(' ', $location);
             log_message('error', 'uid---'.$uid.'  ----mid'.$updateWeibo['mid']);
-            log_message('error', 'submit map--3-');
+            log_message('error', get_cookie('oauth_token'));
             if($updateWeibo['mid']){
                 $province = $location[0];
                 if($province){
