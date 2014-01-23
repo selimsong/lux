@@ -15,7 +15,8 @@ class Map extends CI_Controller {
         $page = $this->uri->segment(2) ? $this->uri->segment(2) : 'submit';
         include_once(APPPATH.'third_party/sina/config.php');
         include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
-        $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
+        //$c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
+        $c = new SaeTClientV2( WB_AKEY , WB_SKEY , $this->session->userdata('tokenString'));
       
         if($page == 'submit'){
             //获取当前用户的信息

@@ -24,6 +24,7 @@ class Home extends CI_Controller {
         if($tokenStringStr['oauth_token']){
         	include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
             set_cookie('oauth_token',$tokenStringStr['oauth_token'],3600*24);
+            $this->session->set_userdata(array('tokenString'=> $this->input->get('tokenString')));
             $c = new SaeTClientV2( WB_AKEY , WB_SKEY , $tokenStringStr['oauth_token']);
 
             //$uid_get = $c->get_uid();
