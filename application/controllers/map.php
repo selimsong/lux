@@ -54,7 +54,7 @@ class Map extends CI_Controller {
                         $cityID = $this->Data_model->addData(array('province'=>$provinceID,'city'=>$city),'city');
                     }
                 }
-
+                log_message('error', 'uid---'.$uid."    $provinceID  ");
                 //插入数据库当次转播的信息
                 $data = array(
                     'user_id'=> $uid,
