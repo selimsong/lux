@@ -19,7 +19,7 @@ class Welcome extends CI_Controller {
         $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
         //$uid_get = $c->get_uid();
         $uid = $this->session->userdata('uid');
-        log_message('error', 'uid----'.$uid);
+        
         $_user = $this->Data_model->getSingle(array('user_id'=>$uid),'share_record');
    
         if (!empty($_user)) {

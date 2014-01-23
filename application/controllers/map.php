@@ -25,7 +25,8 @@ class Map extends CI_Controller {
             }
             $updateWeibo = $c->update('#燃情行动#我已经成功点燃SPRAK燃情火花，你也来一起加入燃情行动，获得亲密的两性关系吧。');
             //$uid_get = $c->get_uid();
-            $uid_get = $this->session->userdata('uid');
+            $uid = $this->session->userdata('uid');
+           
             $location = $updateWeibo['user']['location'];
             $location = explode(' ', $location);
 
@@ -56,7 +57,7 @@ class Map extends CI_Controller {
 
                 //插入数据库当次转播的信息
                 $data = array(
-                    'user_id'=> $uid_get['uid'],
+                    'user_id'=> $uid,
                     'nickname'=>$updateWeibo['user']['name'],
                     'content'=>$updateWeibo['text'],
                     'mid'=>$updateWeibo['mid'],
@@ -69,7 +70,7 @@ class Map extends CI_Controller {
         }
         else {
             //$uid_get = $c->get_uid();
-            $uid_get = $this->session->userdata('uid');
+            $uid = $this->session->userdata('uid');
             //$uid = $uid_get['uid'];
             $user_message = $c->show_user_by_id($uid);//根据ID获取用户等基本信息
             $location = $user_message['location'];
