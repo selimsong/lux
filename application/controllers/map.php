@@ -15,8 +15,7 @@ class Map extends CI_Controller {
         $page = $this->uri->segment(2) ? $this->uri->segment(2) : 'submit';
         include_once(APPPATH.'third_party/sina/config.php');
         include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
-        //$c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
-        $c = new SaeTClientV2( WB_AKEY , WB_SKEY , $this->session->userdata('tokenString'));
+        $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
       
         if($page == 'submit'){
             //获取当前用户的信息
@@ -29,8 +28,7 @@ class Map extends CI_Controller {
             $uid = $this->session->userdata('uid');
             $location = $updateWeibo['user']['location'];
             $location = explode(' ', $location);
-            log_message('error', 'uid---'.$uid.'  ----mid'.$updateWeibo['mid']);
-            log_message('error', get_cookie('oauth_token'));
+
             if($updateWeibo['mid']){
                 $province = $location[0];
                 if($province){
