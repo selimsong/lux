@@ -47,7 +47,7 @@ $route['night/(.*)'] = "night/$1";
 $route['share/(.*)'] = "share/$1";
 $route['product/(.*)'] = "product/$1";
 $route['more/(.*)'] = "more/$1";
-$route['404_override'] = 'home';
+$route['404_override'] = 'home/index';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
