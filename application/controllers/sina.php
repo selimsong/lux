@@ -37,7 +37,7 @@ class Sina extends CI_Controller {
         $tokenArr =  json_decode($returnData);
 		$token = $tokenArr->access_token;
 		if($token){
-			log_message('error', $this->input->get('viewer').'sina ------1');
+			log_message('error', $uid_get['uid'].'sina ------1');
 			log_message('error', $this->session->userdata('uid').'sina ------2');
 			include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
 			set_cookie('oauth_token', $token,3600*24);
