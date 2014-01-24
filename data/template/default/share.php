@@ -43,7 +43,7 @@
                 </div>
                 <div class="share_text_bt" style="text-align:left;">
                     <div class="share_textarea" style="text-align:left;">
-                        <textarea name="content" onclick="dianji()" id="content" rows="6" cols="10" style="float:left;">#燃情之夜#</textarea>
+                        <textarea name="content" onClick="dianji()" id="content" rows="6" cols="10" style="float:left;">#燃情之夜#</textarea>
                         <div class="share_textarea_zishu" id="share_textarea_zishu" style="display:block;">(字数不超过140个)</div>
                         <div class="pagetxt_share_div1_txtbt">
                             <input type="image" src="<?= $config['site_templateurl']; ?>/images/share_bt.png"/>
@@ -104,7 +104,7 @@
           </div>
           <div class="clearfix" style="width:100%;"></div>
           <!--弹出层的按钮:-->
-          <div class="huodong_jieshi" onclick="locking()" style="cursor:pointer;">
+          <div class="huodong_jieshi" onClick="locking()" style="cursor:pointer;">
             *用户条款和隐私政策
           </div>
           <div id="ly" style="position: absolute; top: 0px; filter: alpha(opacity=60);;z-index: 2; left: 0px; display: none;"></div>
@@ -114,8 +114,8 @@
               <div style="text-align:center;width:900px;font-weight:bold;font-size:18px;color:#fff;float:left;">
                 用户条款和隐私政策
               </div>
-              <div id="tabtop-R3" onclick="closeLayer()" style="width:26px;height:25px;float:right; cursor:pointer;margin:4px 10px 0px 0px;">
-                <a href="JavaScript:;" onclick="Lock_CheckForm(this);">
+              <div id="tabtop-R3" onClick="closeLayer()" style="width:26px;height:25px;float:right; cursor:pointer;margin:4px 10px 0px 0px;">
+                <a href="JavaScript:;" onClick="Lock_CheckForm(this);">
                   <img src="<?= $config['site_templateurl']; ?>/images/liaojie_close_bt.png" alt="关闭"/>
                 </a>
               </div>
@@ -442,8 +442,8 @@
     </div>
     <div class="clearfix"></div>
 
-        <div class="pagetxt_share_div2" id="pagetxt_share_div2">
-          <div id="share_mi12_div">
+        <div class="pagetxt_share_div2" id="pagetxt_share_div2" style="text-align:left;">
+          <div id="share_mi12_div" >
             <div class="left" id="leftDiv">
               <?php foreach($list as $item):?>
               <div class="pagetxt_share_div2_1">
@@ -482,9 +482,9 @@
     <div class="share_content">
       <div class="share_photo"><input type="file" multiple="true" name="file_upload" id="file_upload"></div>
       <div class="share_right_content" style="text-align:left;">
-         <form action="<?= base_url('index.php?/share/shareImg') ?>" method="post" id="shareForm" enctype="multipart/form-data" onsubmit="return checkSubmit()">
+         <form action="<?= base_url('index.php?/share/shareImg') ?>" method="post" id="shareForm" enctype="multipart/form-data" onSubmit="return checkSubmit()">
                 <input type="hidden" name="fileurl" id="fileurl"/>
-           <textarea name="content" onclick="dianji()" id="content" rows="6" cols="10" style="float:left;">#燃情之夜#</textarea>
+           <textarea name="content" onClick="dianji()" id="content" rows="6" cols="10" style="float:left;">#燃情之夜#</textarea>
            <div class="share_textarea_zishu" id="share_textarea_zishu" style="display:block;">(字数不超过140个)</div>
            <div class="pagetxt_share_div1_txtbt">
                <input type="image" src="<?= $config['site_templateurl']; ?>/images/share/share_submit.png"/>

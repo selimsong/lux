@@ -817,6 +817,7 @@ body{ overflow:auto }
     width:620px;
     height:245px;
     margin:-8px 0px 0px 155px;
+	*margin:-8px 0px 0px 0px; /*IE7*/
 }
 
 #pagetxt_share_div2 #share_mi12_div{
