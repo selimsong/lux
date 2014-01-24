@@ -36,9 +36,9 @@ class Sina extends CI_Controller {
 		$returnData = file_get_contents('https://api.weibo.com/oauth2/access_token', false, $context);
         $tokenArr =  json_decode($returnData);
 		$token = $tokenArr->access_token;
-		log_message('error', 'sina ------1');
 		if($token){
-			log_message('error', 'sina ------1');
+			log_message('error', $this->input->get('viewer').'sina ------1');
+			log_message('error', $this->session->userdata('uid').'sina ------2');
 			include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
 			set_cookie('oauth_token', $token,3600*24);
 			$c = new SaeTClientV2( WB_AKEY , WB_SKEY , $token);
