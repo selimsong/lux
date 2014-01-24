@@ -41,7 +41,7 @@ div.vertical { width: 100px }
         #flash_control{position:absolute;z-index:900;width:51px;}
         .flash li{position:absolute;overflow:hidden;z-index:601;left:0;}
         .flash .default{z-index:605;}
-        .frame_keleyi_com{width:510px;height:380px;overflow:hidden; margin:20px 0px 0px 7px;
+        .frame_keleyi_com{width:510px;height:380px;overflow:hidden; margin:54px 0px 0px 53px;
         }
         .scroll_keleyi_com{width:510px;height:380px;position:relative;}
         .flash img{width:510px;height:380px;}
@@ -242,18 +242,16 @@ div.vertical { width: 100px }
             </div>
             
             <div class="right">
-                <div style="height:30px;text-align:center;padding:8px 0px 8px 0px; margin:0px 30px 0px 0px;">
+                <div style="text-align:center; margin:7px 30px 5px 0px;">
                     <a href="<?=base_url('index.php?/share')?>">
                         <img src="<?= $config['site_templateurl']; ?>/images/new_night/i-join.png" alt=""/>
                     </a>
                 </div>
                 <div class="ngitht_comment-head" ></div>
                 <div class="night-comments">
-                   
-                  <wb:comments url="http://open.weibo.com/widget/comments.php" fontsize="12" width="260" ></wb:comments>
-                
+                  <wb:comments url="http://open.weibo.com/widget/comments.php" fontsize="12" width="265" ></wb:comments>
                 </div>
-                
+     
             </div>
         </div>
     </div>

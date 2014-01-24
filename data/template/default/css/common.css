@@ -1031,22 +1031,24 @@ body{ overflow:auto }
 ------------------------------------------------*/
 #container{ float:left; width:432px; height:325px; margin:9px 0px 0px 9px; }
 
-.right{height:342px;  float:right; width:300px; margin:0px 7px 0px 0px; }
+.right{height:342px;  float:right; width:300px; margin:44px 22px 0px 0px; }
 
 .night-comments{
-height:448px;
-margin: 0px 0px 0px 3px;
-overflow:hidden;
+height:436px;
+width:265px;
+overflow-y:scroll;
+overflow-x: hidden;
 }
+
 .ngitht_comment-head{
-	margin: 0px 10px 0px 0px;
-	height: 29px;
+	margin: 0px 10px -1px 0px;
+	height: 27px;
     width: 265px;
     overflow:hidden;
 	background:url("../images/new_night/comments-night.png") no-repeat scroll left center rgba(0, 0, 0, 0);	
 }
 
-.slide-pic{ height:0px; width:510px; margin:0px 0px 0px 6px; }
+.slide-pic{ height:0px; width:510px; margin:10px 0px 0px 53px; }
 
 .slide-pic A#prev:link, .slide-pic A#prev:visited{ display:block; background:url(../images/ye_left_top_bt.png) top center no-repeat; overflow:hidden; width:85px; text-align:center; height:6px; outline:none; }
 
@@ -1155,7 +1157,7 @@ overflow:hidden;
 
 .slide-pic UL LI IMG{ display:block; }
 
-.pagetxt_participate{ width:831px; padding:0px 0px 0px 0px; height:561px; margin-top:20px; margin-left:auto; margin-right:auto; background:url(../images/new_night/night-bg.png) no-repeat;  }
+.pagetxt_participate{ width:895px; padding:0px 0px 0px 0px; height:584px;  margin-left:auto; margin-right:auto; background:url(../images/new_night/night-bg.png) no-repeat;  }
 
 .ye_container{ margin-left:auto; margin-right:auto; width:530; height:342px; }
 
