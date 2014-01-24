@@ -41,7 +41,7 @@ div.vertical { width: 100px }
         #flash_control{position:absolute;z-index:900;width:51px;}
         .flash li{position:absolute;overflow:hidden;z-index:601;left:0;}
         .flash .default{z-index:605;}
-        .frame_keleyi_com{width:510px;height:380px;overflow:hidden; margin:54px 0px 0px 53px;
+        .frame_keleyi_com{width:510px;height:380px;overflow:hidden; margin:60px 0px 0px 53px;
         }
         .scroll_keleyi_com{width:510px;height:380px;position:relative;}
         .flash img{width:510px;height:380px;}
