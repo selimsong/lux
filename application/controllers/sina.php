@@ -40,9 +40,7 @@ class Sina extends CI_Controller {
 			include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
 			set_cookie('oauth_token', $token,3600*24);
 			$c = new SaeTClientV2( WB_AKEY , WB_SKEY , $token);
-			$uid_get = $c->get_uid();
-			log_message('error', $uid_get['uid'].'sina ------1');
-			log_message('error', $this->session->userdata('uid').'sina ------2');
+			//$uid_get = $c->get_uid();
 			$_user = $this->Data_model->getSingle(array('user_id'=>$this->session->userdata('uid')),'share_record');
 			if (!empty($_user)) {
 				redirect(base_url('index.php?/map'));
