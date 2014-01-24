@@ -1047,7 +1047,7 @@ overflow-x: hidden;
     overflow:hidden;
 }
 
-.slide-pic{ height:0px; width:510px; margin:10px 0px 0px 53px; }
+.slide-pic{ height:0px; width:510px; margin:2px 0px 0px 53px; }
 
 .slide-pic A#prev:link, .slide-pic A#prev:visited{ display:block; background:url(../images/ye_left_top_bt.png) top center no-repeat; overflow:hidden; width:85px; text-align:center; height:6px; outline:none; }
 
