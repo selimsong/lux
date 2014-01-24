@@ -25,7 +25,7 @@ class Map extends CI_Controller {
             }
             $updateWeibo = $c->update('#燃情行动#我已经成功点燃SPRAK燃情火花，你也来一起加入燃情行动，获得亲密的两性关系吧。');
             //$uid_get = $c->get_uid();
-            log_message('error', $updateWeibo['mid'].'map ------1');
+            log_message('error', $updateWeibo.'map ------1');
             log_message('error', $this->session->userdata('uid').'map ------2');
             $uid = $this->session->userdata('uid');
             $location = $updateWeibo['user']['location'];
