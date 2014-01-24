@@ -12,7 +12,7 @@ class Map extends CI_Controller {
 	}
 	
 	public function index(){
-        $page = $this->uri->segment(2) ? $this->uri->segment(2) : 'submit';
+        $page = $this->uri->segment(2) ? $this->uri->segment(2) : '';
         include_once(APPPATH.'third_party/sina/config.php');
         include_once( APPPATH.'third_party/sina/saetv2.ex.class.php' );
         $c = new SaeTClientV2( WB_AKEY , WB_SKEY , get_cookie('oauth_token') );
@@ -25,8 +25,6 @@ class Map extends CI_Controller {
             }
             $updateWeibo = $c->update('#燃情行动#我已经成功点燃SPRAK燃情火花，你也来一起加入燃情行动，获得亲密的两性关系吧。');
             //$uid_get = $c->get_uid();
-            log_message('error', json_encode($updateWeibo).'map ------1');
-            log_message('error', $this->session->userdata('uid').'map ------2');
             $uid = $this->session->userdata('uid');
             $location = $updateWeibo['user']['location'];
             $location = explode(' ', $location);
