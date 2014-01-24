@@ -247,7 +247,7 @@ div.vertical { width: 100px }
                         <img src="<?= $config['site_templateurl']; ?>/images/new_night/i-join.png" alt=""/>
                     </a>
                 </div>
-                <div class="ngitht_comment-head" ></div>
+                <div class="ngitht_comment-head" ><img src="<?= $config['site_templateurl']; ?>/images/new_night/comments-night.png"  /></div>
                 <div class="night-comments">
                   <wb:comments url="http://open.weibo.com/widget/comments.php" fontsize="12" width="265" ></wb:comments>
                 </div>
