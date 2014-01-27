@@ -123,20 +123,24 @@
             <div id="tabcontent3" style="padding:8px;height:650px;overflow:auto;text-align:left;font-family:宋体;line-height:175%;">
               <p class="guize_p1">力士燃情之夜活动规则</p>
               <p class="guize_p1">一：活动简介</p>
-              &nbsp;&nbsp;&nbsp;&nbsp;招募时间：2013年12月30日—2014年1月24日（第一波招募）<br/>
-              　　　　　&nbsp;&nbsp;&nbsp;&nbsp;2014年2月10日—2014年3月14日（第二波招募）<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;入住时间：2014年1月2日—2014年3月23日<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;入住地点：上海半岛酒店。<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;参与条件：华东地区女性用户。<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;招募时间：2014年1月27日-2014年2月14日（第一波招募）<br/>
+              　　　　　&nbsp;&nbsp;&nbsp;&nbsp;2014年2月14日-2014年2月28日（第二波招募）<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;入住时间：2014年2月10日-2014年2月28日（第一波入住）<br/>&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年3月1日-2014年3月23日（第二波入住）<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（具体入住时间以最终沟通确认为准，入住时间仅限1晚。）<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;入住地点：上海半岛酒店 (上海市外滩中山东一路32号)<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;参与条件：年龄超过20周岁以上的情侣/夫妻。<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;招募周期说明：<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;1. 2014年1月27日-2014年2月14日 第一波，招募2014年2月10日-2014年2月28日的入住者，每周3对，共6对。<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;2. 2014年2月14日-2月28日 第二波，招募2014年3月1日-2014年3月23日的入住者，每周3对，共6对。（共招募12对）<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;参与方式：<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;通过页面：http://  导航栏中的燃情故事上传自己和另一半的亲密合照。<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;分享照片中的燃情故事 @LUX力士。<br/><br/>
-              <p class="guize_p1">二：活动奖励：</p>
-              &nbsp;&nbsp;&nbsp;&nbsp;燃情之夜体验资格：<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;每周从符合参与要求的用户中随机抽取4位用户获得和另一半一起参与燃情之夜的体验资格。<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;用户领奖及兑奖须知：<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;燃情之夜公布获奖名单一周内，主办方将联系获奖用户，和其确认参与体验具体事宜。<br/><br/>
-              <p class="guize_p1"> 三：体验流程：</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;1. 在页面：http://t.cn/8k1dYsy燃情故事中上传你和他的亲密合照@你的他，@LUX力士<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;2. 用#燃情之夜#开头，再一次亲密接触结尾，分享你和他的照片中的燃情故事和你想要入住的日期。<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;评选规则：<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;随机抽取符合参与方式和条件的情侣/夫妻体验燃情之夜。<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;每周周五公布下周入住名单<br/><br/>
+
+              <p class="guize_p1"> 二：体验流程：</p>
               &nbsp;&nbsp;&nbsp;&nbsp;13:00-13:30 开启燃情之夜  （LUX管家带领办理入住手续）<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;13:30-15:00 亲密肢体互动  （燃情舞蹈老师进行触发亲密的舞蹈教学）<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;15:00-16:30 美妙香氛“体”验 （体验燃情spa）<br/>
@@ -146,7 +150,7 @@
               &nbsp;&nbsp;&nbsp;&nbsp;21:00-次日11:00 共度燃情一夜<br/><br/>
               &nbsp;&nbsp;&nbsp;&nbsp;活动主办发提供活动当日上海本地接送服务，以及上述流程环节中所提供项目的全部费用。<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;*参与者若非上海用户，异地差旅需要自理。<br/><br/>
-              <p class="guize_p1"> 四、活动说明：</p>
+              <p class="guize_p1"> 三、活动说明：</p>
               &nbsp;&nbsp;&nbsp;&nbsp;(1)用户保证在活动过程中遵守中国相关法律、法规、规章和其他规范性文件。<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;(2)不得为任何非法目的而使用网络服务系统，不得在活动中出现任何损害国家利益、破坏民族团结、宣扬封建迷信、扰乱社会秩序、宣扬淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪和侵害他人合法权益等不符合国家法律规定的内容，也不得出现任何包含诬蔑、人身攻击、谩骂、侮辱、诋毁、有悖公序良俗等的不适当内容；<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;(3)遵守所有与网络服务有关的网络协议、规定和程序；<br/>
