@@ -104,7 +104,7 @@
           </div>
           <div class="clearfix" style="width:100%;"></div>
           <!--弹出层的按钮:-->
-          <div class="huodong_jieshi" onClick="locking()" style="cursor:pointer;">
+          <div class="huodong_jieshi" onClick="locking()" style="color:#322fbc;cursor:pointer;">
             *用户条款和隐私政策
           </div>
           <div id="ly" style="position: absolute; top: 0px; filter: alpha(opacity=60);;z-index: 2; left: 0px; display: none;"></div>
