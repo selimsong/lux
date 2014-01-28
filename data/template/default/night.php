@@ -202,7 +202,7 @@ div.vertical { width: 100px }
 		    data-cycle-prev="#prev"
 		    data-cycle-pager="#pager"
 		    >
-		    <li><img title="1" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
+		    <li><img title="1" onclick="changebg();" src="<?= $config['site_templateurl']; ?>/images/join/join1.jpg"></li>
 		    <li><img title="2" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
             <li><img title="3" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
             <li><img title="4" src="<?= $config['site_templateurl']; ?>/images/ye_right_list_bg-big.png"></li>
@@ -221,6 +221,10 @@ div.vertical { width: 100px }
            // $.fullFoucs({
              //   direction: 'up'
            // });
+           function changebg(){
+               $('li.cycle-slide-active > a> img').attr("src"," <?= $config['site_templateurl']; ?>/images/join/bjoin1.png");
+           }
+           
            $('.cycle-slideshow').cycle({
 			    speed: 300,
 				slides: '>li'
