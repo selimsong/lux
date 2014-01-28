@@ -16,6 +16,10 @@ div.responsive img { width: auto; height: auto }
 .cycle-pager { position: static; margin-top: 5px }
 div.vertical { width: 100px }
 .cycle-slideshow {display: inline-block; margin: 0 }
+
+li,img,a{
+text-align:center;
+}
 </style>
 <div class="page" id="page_welcome">
     <?php $this->load->view($config['site_template'].'/nav');?>
@@ -224,7 +228,8 @@ div.vertical { width: 100px }
            function changebg(){
                $('li.cycle-slide-active > a> img').attr("src"," <?= $config['site_templateurl']; ?>/images/join/bjoin1.png");
            }
-           
+
+
            $('.cycle-slideshow').cycle({
 			    speed: 300,
 				slides: '>li'
