@@ -75,7 +75,7 @@ class Share extends CI_Controller {
         $shareWB = $c->upload_url_text($content ,$shareThumb);
         //存储记录
         $userThumb = $shareWB['user']['profile_image_url'];
-        $shareThumb = $shareWB['thumbnail_pic'];
+        $shareThumb = $shareWB['original_pic'];
         $nickName = $shareWB['user']['name'];
         $mid = $shareWB['mid'];
         if($nickName && $shareThumb){
